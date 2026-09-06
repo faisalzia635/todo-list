@@ -5,10 +5,7 @@ const formatDate = (date) => new Date(date).toLocaleDateString();
 
 function TodoList() {
     const [newTask, setNewTask] = useState('');
-    const [tasks, setTasks] = useState([
-        { id: 1, text: 'Task 1', completed: false, createdAt: new Date().toISOString() },
-        { id: 2, text: 'Task 2', completed: true, createdAt: new Date().toISOString() },
-    ]);
+    const [tasks, setTasks] = useState([]);
 
     const addTask = () => {
         const taskText = newTask.trim();
